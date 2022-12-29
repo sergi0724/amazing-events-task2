@@ -1,0 +1,278 @@
+:root {
+  --primary: #8a8a8ad2;
+  --secondary: hsl(0 0% 15%);
+  --text: #f2e8cf;
+  --link-text: black;
+}
+/*Header*/
+header {
+  height: 5vh;
+}
+#nav {
+  background-color: var(--secondary) !important;
+}
+nav img {
+  max-height: 7vh;
+  padding-left: 2rem;
+}
+.navbar-nav {
+  margin-left: auto;
+}
+#navbarNavAltMarkup {
+  padding: 2rem !important;
+}
+.nav-link {
+  border-top: 3px solid var(--text);
+  padding: 0.1rem 0.6rem !important;
+  border-radius: 5px;
+  color: var(--text) !important;
+}
+.nav-link:hover {
+  background-color: var(--text);
+  color: var(--link-text) !important;
+}
+/*Main*/
+main {
+  min-height: 83vh;
+  background-color: #474747;
+}
+p {
+  margin: 0 !important;
+}
+.hero {
+  background-color: var(--primary);
+  color: var(--link-text);
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+/*Main - Filters*/
+.filters {
+  padding: 2rem !important;
+  align-items: center;
+  justify-content: center;
+}
+.filters .dropdown {
+  margin-block: 1rem;
+}
+.searchbar {
+  margin: 1rem;
+  max-width: 500px;
+}
+.searchbar input {
+  padding: 0.7rem 1rem;
+}
+.searchbar button {
+  height: 3rem;
+}
+.dropdown-menu {
+  padding: 0.5rem !important;
+  transform: none !important;
+}
+/*Main - Cards*/
+.cards {
+  padding-inline: 2rem;
+  padding-bottom: 5rem;
+}
+.card-bottom {
+  padding-top: 1.5rem;
+  justify-content: space-between;
+}
+.card-bottom p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+h5 {
+  text-align: center;
+  padding-block: 1rem;
+  width: 100%;
+}
+.card-title {
+  background-color: var(--primary) !important;
+}
+.card-bottom a {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+.card-bottom a:hover,
+.card-bottom a:active,
+.card-bottom a:focus {
+  background-color: var(--text) !important;
+  color: rgb(150, 34, 34) !important;
+  border-color: rgb(197, 36, 36) !important;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card {
+  align-self: stretch;
+  height: 500px;
+}
+.card img {
+  object-fit: cover;
+  height: 300px;
+}
+/*Footer*/
+footer {
+  height: 10vh;
+  padding-inline: 2rem;
+  background-color: var(--secondary);
+  color: var(--text);
+}
+footer img {
+  width: 2.4rem;
+  border-radius: 50%;
+}
+footer p {
+  font-size: 2rem;
+}
+#logo-face {
+  width: 2rem;
+  color: transparent;
+}
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.socials a {
+  color: transparent !important;
+}
+#logo-whats {
+  width: 2rem;
+}
+/*Contact*/
+.contact-form {
+  padding-block: 5rem;
+}
+fieldset {
+  width: 70vw;
+  border-radius: 8px !important;
+  padding: 2rem !important;
+  border: 2px solid gray !important;
+  background-color: var(--primary);
+}
+fieldset :where(input, textarea, label) {
+  width: 100%;
+}
+fieldset :where(input, textarea) {
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+fieldset input[type='submit'] {
+  max-width: 30%;
+  align-self: flex-end;
+  margin-block: 1.5rem;
+  padding-block: 0.3rem;
+  background-color: var(--secondary);
+  color: var(--text);
+  border-radius: 6px;
+}
+fieldset label {
+  align-self: flex-start;
+  font-size: 1.4rem;
+}
+/*Stats*/
+table {
+  margin-top: 2rem;
+  max-width: 95vw !important;
+}
+tbody,
+thead {
+  border-radius: 10px !important;
+}
+.table-subh {
+  background-color: var(--primary);
+}
+td,
+th {
+  width: 33%;
+  border: 1px solid gray !important;
+}
+/*Detail*/
+#detail-card {
+  align-self: center;
+  max-width: 70vw !important;
+}
+#detail-card img {
+  width: 100%;
+  height: 100%;
+}
+#detail-card > div {
+  width: 100%;
+}
+.category {
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  border-radius: 15px;
+  background-color: var(--link-text);
+  color: var(--text);
+  padding: 0.2rem 1rem;
+}
+.card-detail-bottom {
+  background-color: var(--primary);
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  height: 100% !important;
+}
+.col-lg-8 {
+  height: 100%;
+}
+/*Media Queries*/
+@media (max-width: 425px) {
+  nav img {
+    padding: 0;
+  }
+  nav > div {
+    padding: 0 !important;
+  }
+  .socials {
+    justify-content: initial;
+    gap: 1rem;
+  }
+  .cards {
+    padding-inline: 1rem;
+    align-items: center !important;
+    flex-direction: row !important;
+  }
+  fieldset {
+    width: 95vw;
+  }
+  #detail-card {
+    max-width: 95vw !important;
+  }
+}
+@media (min-width: 765px) {
+  fieldset {
+    width: 50vw;
+  }
+  #detail-card > div {
+    height: 100%;
+  }
+}
+@media (min-width: 1025px) {
+  fieldset {
+    width: 35vw;
+  }
+  #detail-card img {
+    height: 100%;
+  }
+  #detail-card > div {
+    width: auto !important;
+  }
+  .col-lg-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  .table {
+    max-width: clamp(50%, 50% + 10vw, 70%) !important;
+  }
+}
